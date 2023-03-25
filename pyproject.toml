@@ -1,0 +1,22 @@
+[project]
+name = "Chat"
+version = "0.0.1"
+authors = [
+    {name = "Lars Mescheder", email = "larsmescheder@gmx.net"},
+]
+description = "Simple tool to edit text using OpenAI's GPT"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "BSD-3"}
+dependencies = [
+  "click",
+  "openai",
+]
+
+[project.scripts]
+aiedit = "aiedit.cli:cli"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
