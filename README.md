@@ -1,4 +1,4 @@
-# AI Edit
+# AI Tools
 
 This repository contains a small but useful `aiedit` command that takes instructions as arguments, reads text from STDIN, and outputs text to STDOUT.
 
