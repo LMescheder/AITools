@@ -1,5 +1,5 @@
 [project]
-name = "Chat"
+name = "AITools"
 version = "0.0.1"
 authors = [
     {name = "Lars Mescheder", email = "larsmescheder@gmx.net"},
