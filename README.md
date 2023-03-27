@@ -9,7 +9,7 @@ To install, simply run:
 pip install .
 ```
 
-This will install all dependencies and make the `aiedit` tool available. Please note that we currently require Python version 3.10. If this version is not supported by your operating system, you can install it using [asdf](https://asdf-vm.com/) or a similar tool.
+This will install all dependencies and make the `aigen`, `aimod` and `aiexplain` tools available. Please note that we currently require Python version 3.10. If this version is not supported by your operating system, you can install it using [asdf](https://asdf-vm.com/) or a similar tool.
 
 ## Usage
 To use the tool, first obtain an API key from the OpenAI [website](https://platform.openai.com/) and set the `OPENAI_API_KEY` environment variable by running:
