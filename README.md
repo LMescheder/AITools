@@ -1,6 +1,8 @@
 # AI Tools
 
-This repository contains a small but useful `aiedit` command that takes instructions as arguments, reads text from STDIN, and outputs text to STDOUT.
+This repository contains a small but useful suite of command line tools that use LLMs to perform tasks.
+
+The commands take instructions as arguments, read text from STDIN, and output text to STDOUT.
 
 To install, simply run:
 ```bash
