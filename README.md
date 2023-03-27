@@ -17,23 +17,37 @@ export OPENAI_API_KEY=<your-openai-api-key>
 
 You can now apply the tool to a text file by running:
 ```bash
-aiedit INSTRUCTION < INPUT_FILE > OUTPUT_FILE
+aimod INSTRUCTION < INPUT_FILE > OUTPUT_FILE
 ```
 
 For example, to rewrite code in Rust, run:
 ```bash
-aiedit "Rewrite in Rust" < mycode.cpp > mycode.rs
+aimod "Rewrite in Rust" < mycode.cpp > mycode.rs
 ```
 
 Please note that applying the tool may result in charges by OpenAI.
 
-You can also use this tool in VIM by selecting text in VISUAL mode and typing:
+Tools that are available:
+
+* `aiexplain`: Generate explanation for text from STDIN 
+* `aigen INSTRUCTION`: Generate text or code given instruction
+* `aimod INSTRUCTION`: Modifies text from STDIN given explanation
+
+## Usage in VIM
+You can execute external commands in VIM using the [bang symbol](https://vimways.org/2019/vim-and-the-shell/).
+
+This way, you can use the tools directly VISUAL mode by typing:
 ```bash
-:!aiedit INSTRUCTION
+:!aimod INSTRUCTION
 ```
 or
 ```bash
-:%!aiedit INSTRUCTION
+:%!aimod INSTRUCTION
 ```
 to apply the instruction to the entire document.
+
+To generate an explanation for a given text or code fragment in a separate window, you can run
+```bash
+:w !aiexplain
+```
 

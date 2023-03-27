@@ -14,7 +14,9 @@ dependencies = [
 ]
 
 [project.scripts]
-aiedit = "aiedit.cli:cli"
+aimod = "aitools.cli:modify_command"
+aigen = "aitools.cli:generate_command"
+aiexplain = "aitools.cli:explain_command"
 
 [build-system]
 requires = ["setuptools", "setuptools-scm"]
